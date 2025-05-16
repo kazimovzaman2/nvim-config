@@ -9,5 +9,6 @@ require("lazy").setup({
     { import = "plugins.telescope" },
     { import = "plugins.cmp" },
     { import = "plugins.lspconfig" },
+    { import = "plugins.colorscheme" },
 })
 
