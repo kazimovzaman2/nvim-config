@@ -3,15 +3,14 @@ return {
     dependencies = {
         {
             "folke/lazydev.nvim",
-            ft = "lua", -- only load on lua files
+            ft = "lua",
             opts = {
                 library = {
-                    -- Load luvit types when the `vim.uv` word is found
                     { path = "${3rd}/luv/library", words = { "vim%.uv" } },
                 },
             },
         },
-        "hrsh7th/cmp-nvim-lsp", -- Ensure cmp-nvim-lsp is available for capabilities
+        "hrsh7th/cmp-nvim-lsp",
     },
     config = function()
         require('lspconfig').lua_ls.setup({

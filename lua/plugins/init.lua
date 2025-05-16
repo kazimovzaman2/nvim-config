@@ -10,5 +10,5 @@ require("lazy").setup({
     { import = "plugins.cmp" },
     { import = "plugins.lspconfig" },
     { import = "plugins.colorscheme" },
+    { import = "plugins.conform" },
 })
-
